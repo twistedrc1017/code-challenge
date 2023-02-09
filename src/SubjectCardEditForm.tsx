@@ -26,6 +26,7 @@ export const SubjectCardEditForm: FC<ISubjectCardEditFormProps> = (props) => {
 
       {form.isDisabled ? (
         <SubjectCardButtonRed
+          type="submit"
           onClick={() => {
             setMode("Read");
           }}
@@ -33,7 +34,11 @@ export const SubjectCardEditForm: FC<ISubjectCardEditFormProps> = (props) => {
           Cancel
         </SubjectCardButtonRed>
       ) : (
-        <SubjectCardButton onClick={onSave} disabled={form.isDisabled}>
+        <SubjectCardButton
+          onClick={onSave}
+          disabled={form.isDisabled}
+          type="submit"
+        >
           Save
         </SubjectCardButton>
       )}

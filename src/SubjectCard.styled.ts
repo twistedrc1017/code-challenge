@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const SubjectCardWrapper = styled.div`
+export const SubjectCardWrapper = styled.form`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(5, 1fr);

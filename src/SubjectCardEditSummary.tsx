@@ -23,9 +23,11 @@ export const SubjectCardEditSummary: FC<ISubjectCardEditSummaryProps> = (
     <SubjectCardWrapper>
       <SubjectCardLabel />
       <SubjectCardButton
+        type="submit"
         onClick={() => {
           alert("unimplemented save function");
         }}
+        autoFocus
       >
         Confirm Changes
       </SubjectCardButton>
