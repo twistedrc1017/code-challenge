@@ -8,6 +8,10 @@ export const SubjectCardWrapper = styled.div`
   grid-row-gap: 8px;
   background-color: white;
   width: 100%;
+  border-radius: 4px;
+  background-color: white;
+  border: 1px solid #c0c0c0;
+  padding: 8px;
 `;
 
 export const SubjectCardLabel = styled.label`
@@ -27,6 +31,24 @@ export const SubjectCardValue = styled.span`
 export const SubjectCardButton = styled.button`
   font-weight: bold;
   color: #5a90da;
+  background-color: transparent;
+  border: none;
+  width: fit-content;
+  display: flex;
+  margin-left: auto;
+  font-size: 16px;
+  padding: 0;
+
+  cursor: pointer;
+
+  &:disabled {
+    color: #5c5c5c;
+    cursor: not-allowed;
+  }
+`;
+export const SubjectCardButtonRed = styled.button`
+  font-weight: bold;
+  color: red;
   background-color: transparent;
   border: none;
   width: fit-content;

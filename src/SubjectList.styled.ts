@@ -6,4 +6,6 @@ export const SubjectListWrapper = styled.div`
   background-color: white;
   border: 1px solid #c0c0c0;
   padding: 8px;
+  flex-direction: column;
+  gap: 12px;
 `;

@@ -92,6 +92,7 @@ video {
   vertical-align: baseline;
   background-color: #f8f8f9;
   font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article,

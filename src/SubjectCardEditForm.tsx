@@ -2,6 +2,7 @@ import { FC } from "react";
 import { useSubjectCardContext } from "./SubjectCard.context";
 import {
   SubjectCardButton,
+  SubjectCardButtonRed,
   SubjectCardInput,
   SubjectCardLabel,
   SubjectCardValue,
@@ -16,15 +17,27 @@ export interface ISubjectCardEditFormProps {
 }
 
 export const SubjectCardEditForm: FC<ISubjectCardEditFormProps> = (props) => {
-  const { data } = useSubjectCardContext();
+  const { data, setMode } = useSubjectCardContext();
   const { form, onSave } = props;
 
   return (
     <SubjectCardWrapper>
       <SubjectCardLabel />
-      <SubjectCardButton onClick={onSave} disabled={form.isDisabled}>
-        Save
-      </SubjectCardButton>
+
+      {form.isDisabled ? (
+        <SubjectCardButtonRed
+          onClick={() => {
+            setMode("Read");
+          }}
+        >
+          Cancel
+        </SubjectCardButtonRed>
+      ) : (
+        <SubjectCardButton onClick={onSave} disabled={form.isDisabled}>
+          Save
+        </SubjectCardButton>
+      )}
+
       <SubjectCardLabel>Course ID</SubjectCardLabel>
       <SubjectCardValue>{data?.course_id}</SubjectCardValue>
       <SubjectCardLabel>Subject</SubjectCardLabel>

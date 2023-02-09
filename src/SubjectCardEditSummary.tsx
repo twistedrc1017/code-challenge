@@ -21,6 +21,14 @@ export const SubjectCardEditSummary: FC<ISubjectCardEditSummaryProps> = (
   const { form } = props;
   return (
     <SubjectCardWrapper>
+      <SubjectCardLabel />
+      <SubjectCardButton
+        onClick={() => {
+          alert("unimplemented save function");
+        }}
+      >
+        Confirm Changes
+      </SubjectCardButton>
       <Flex>
         <SubjectCardLabel>Course ID</SubjectCardLabel>
       </Flex>
@@ -71,8 +79,6 @@ export const SubjectCardEditSummary: FC<ISubjectCardEditSummaryProps> = (
           </Flex>
         </Fragment>
       )}
-      <SubjectCardLabel />
-      <SubjectCardButton>Confirm Changes</SubjectCardButton>
     </SubjectCardWrapper>
   );
 };
