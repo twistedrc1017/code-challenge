@@ -1,6 +1,6 @@
 import { FC } from "react";
 import {
-  SubjectCardEditButton,
+  SubjectCardButton,
   SubjectCardLabel,
   SubjectCardValue,
   SubjectCardWrapper,
@@ -14,9 +14,9 @@ export const SubjectCardRead: FC<ISubjectCardReadProps> = (props) => {
   return (
     <SubjectCardWrapper>
       <SubjectCardLabel />
-      <SubjectCardEditButton onClick={() => setMode("Edit")}>
+      <SubjectCardButton onClick={() => setMode("Edit")}>
         Edit
-      </SubjectCardEditButton>
+      </SubjectCardButton>
       <SubjectCardLabel>Course ID</SubjectCardLabel>
       <SubjectCardValue>{data?.course_id}</SubjectCardValue>
       <SubjectCardLabel>Subject</SubjectCardLabel>

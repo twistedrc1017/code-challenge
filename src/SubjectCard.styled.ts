@@ -24,7 +24,7 @@ export const SubjectCardValue = styled.span`
   text-align: right;
 `;
 
-export const SubjectCardEditButton = styled.button`
+export const SubjectCardButton = styled.button`
   font-weight: bold;
   color: #5a90da;
   background-color: transparent;
@@ -36,6 +36,11 @@ export const SubjectCardEditButton = styled.button`
   padding: 0;
 
   cursor: pointer;
+
+  &:disabled {
+    color: #5c5c5c;
+    cursor: not-allowed;
+  }
 `;
 
 export const SubjectCardInput = styled.input`
