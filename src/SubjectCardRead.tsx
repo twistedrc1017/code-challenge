@@ -1,4 +1,4 @@
-import { FC, Fragment } from "react";
+import { FC } from "react";
 import {
   SubjectCardEditButton,
   SubjectCardLabel,
@@ -14,15 +14,19 @@ export const SubjectCardRead: FC<ISubjectCardReadProps> = (props) => {
   return (
     <SubjectCardWrapper>
       <SubjectCardLabel />
-      <SubjectCardEditButton
-        onClick={() => {
-          setMode("Edit");
-        }}
-      >
+      <SubjectCardEditButton onClick={() => setMode("Edit")}>
         Edit
       </SubjectCardEditButton>
       <SubjectCardLabel>Course ID</SubjectCardLabel>
       <SubjectCardValue>{data?.course_id}</SubjectCardValue>
+      <SubjectCardLabel>Subject</SubjectCardLabel>
+      <SubjectCardValue>{data?.subject}</SubjectCardValue>
+      <SubjectCardLabel>Score</SubjectCardLabel>
+      <SubjectCardValue>{data?.score}</SubjectCardValue>
+      <SubjectCardLabel>Grade</SubjectCardLabel>
+      <SubjectCardValue>{data?.grade}</SubjectCardValue>
+      <SubjectCardLabel>Credits</SubjectCardLabel>
+      <SubjectCardValue>{data?.credits}</SubjectCardValue>
     </SubjectCardWrapper>
   );
 };

@@ -37,3 +37,9 @@ export const SubjectCardEditButton = styled.button`
 
   cursor: pointer;
 `;
+
+export const SubjectCardInput = styled.input`
+  padding: 4px;
+  color: #5c5c5c;
+  border: 1px solid #c0c0c0;
+`;

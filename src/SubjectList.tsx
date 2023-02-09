@@ -6,7 +6,6 @@ import { mockedData } from "./data";
 export interface ISubjectListProps {}
 
 export const SubjectList: FC<ISubjectListProps> = (props) => {
-  const {} = props;
   return (
     <SubjectListWrapper>
       {mockedData.map((record) => {
