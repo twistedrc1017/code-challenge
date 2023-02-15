@@ -1,8 +1,9 @@
+import { FC } from "react";
 import "./App.css";
 import { AppWrapper, SubjectTitle } from "./App.styled";
-import { SubjectList } from "./SubjectList";
+import { SubjectList } from "./views/SubjectList/SubjectList";
 
-function App() {
+export const App: FC = () => {
   return (
     <AppWrapper>
       <SubjectTitle>Subjects</SubjectTitle>
@@ -10,6 +11,4 @@ function App() {
       <SubjectList />
     </AppWrapper>
   );
-}
-
-export default App;
+};

@@ -3,9 +3,9 @@ import {
   SubjectCardProvider,
   useSubjectCardContext,
 } from "./SubjectCard.context";
-import { SubjectCardEdit } from "./SubjectCardEdit";
-import { SubjectCardRead } from "./SubjectCardRead";
-import { SubjectRecord } from "./data";
+import { SubjectCardEdit } from "../SubjectCardEdit/SubjectCardEdit";
+import { SubjectCardRead } from "../SubjectCardRead/SubjectCardRead";
+import { SubjectRecord } from "../../data";
 
 const Component: FC = () => {
   const { mode } = useSubjectCardContext();

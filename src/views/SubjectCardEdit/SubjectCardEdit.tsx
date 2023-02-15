@@ -1,8 +1,8 @@
 import { FC, useState } from "react";
-import { useSubjectCardContext } from "./SubjectCard.context";
+import { useSubjectCardContext } from "../SubjectCard/SubjectCard.context";
 import { SubjectCardEditForm } from "./SubjectCardEditForm";
 import { SubjectCardEditSummary } from "./SubjectCardEditSummary";
-import { useFormBehaviors } from "./hooks/useFormBehaviors";
+import { useFormBehaviors } from "../../hooks/useFormBehaviors";
 
 export interface ISubjectCardEditProps {}
 

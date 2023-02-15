@@ -1,0 +1,1 @@
+export const MOCK_API_REQUEST_DURATION = 2000;

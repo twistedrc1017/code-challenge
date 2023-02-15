@@ -1,14 +1,14 @@
 import { FC, Fragment } from "react";
+import { Flex } from "../../components/Flex";
+import { SubjectRecord } from "../../data";
+import { UseFormBehaviors } from "../../hooks/useFormBehaviors/useFormBehaviors.types";
+import { useSubjectCardContext } from "../SubjectCard/SubjectCard.context";
 import {
   SubjectCardWrapper,
   SubjectCardLabel,
   SubjectCardButton,
   SubjectCardValue,
-} from "./SubjectCard.styled";
-import { Flex } from "./components/Flex";
-import { useSubjectCardContext } from "./SubjectCard.context";
-import { SubjectRecord } from "./data";
-import { UseFormBehaviors } from "./hooks/useFormBehaviors/useFormBehaviors.types";
+} from "../SubjectCard/SubjectCard.styled";
 
 export interface ISubjectCardEditSummaryProps {
   form: UseFormBehaviors<SubjectRecord, undefined>;

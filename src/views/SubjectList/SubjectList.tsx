@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { SubjectListWrapper } from "./SubjectList.styled";
-import { SubjectCard } from "./SubjectCard";
-import { mockedData } from "./data";
+import { mockedData } from "../../data";
+import { SubjectCard } from "../SubjectCard/SubjectCard";
 
 export interface ISubjectListProps {}
 

@@ -8,7 +8,7 @@ import {
   useMemo,
   useState,
 } from "react";
-import { SubjectRecord, mockedData } from "./data";
+import { SubjectRecord, mockedData } from "../../data";
 
 type SubjectCardMode = "Read" | "Edit";
 

@@ -4,8 +4,8 @@ import {
   SubjectCardLabel,
   SubjectCardValue,
   SubjectCardWrapper,
-} from "./SubjectCard.styled";
-import { useSubjectCardContext } from "./SubjectCard.context";
+} from "../SubjectCard/SubjectCard.styled";
+import { useSubjectCardContext } from "../SubjectCard/SubjectCard.context";
 
 export interface ISubjectCardReadProps {}
 

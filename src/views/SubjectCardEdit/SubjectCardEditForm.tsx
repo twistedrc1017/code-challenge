@@ -1,15 +1,15 @@
 import { FC } from "react";
-import { useSubjectCardContext } from "./SubjectCard.context";
+import { SubjectRecord } from "../../data";
+import { UseFormBehaviors } from "../../hooks/useFormBehaviors/useFormBehaviors.types";
+import { useSubjectCardContext } from "../SubjectCard/SubjectCard.context";
 import {
-  SubjectCardButton,
-  SubjectCardButtonRed,
-  SubjectCardInput,
-  SubjectCardLabel,
-  SubjectCardValue,
   SubjectCardWrapper,
-} from "./SubjectCard.styled";
-import { SubjectRecord } from "./data";
-import { UseFormBehaviors } from "./hooks/useFormBehaviors/useFormBehaviors.types";
+  SubjectCardLabel,
+  SubjectCardButtonRed,
+  SubjectCardButton,
+  SubjectCardValue,
+  SubjectCardInput,
+} from "../SubjectCard/SubjectCard.styled";
 
 export interface ISubjectCardEditFormProps {
   form: UseFormBehaviors<SubjectRecord, undefined>;
